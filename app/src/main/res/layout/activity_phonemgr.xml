@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.hsl.hollekeiti.activity.PhonemgrActivity">
+
+    <edu.hsl.hollekeiti.phone.view.ActionBarView
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/ll_layout_battery"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/phonemgr_height"
+        android:background="@drawable/home_entry_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:padding="20dp">
+
+        <ProgressBar
+            android:id="@+id/pb_battery"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/phonemgr_battery_height"
+            android:layout_weight="1"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/progressbar_battery"/>
+        <View
+            android:id="@+id/view"
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/pb_battery"
+            android:layout_alignTop="@+id/pb_battery"
+            android:background="#ffaa1266"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/pb_battery"
+            android:layout_alignEnd="@+id/pb_battery"
+            android:background="#ffaa1266"/>
+
+        <TextView
+            android:id="@+id/tv_battery"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="100%"
+            android:textColor="#ffaa1266"
+            android:textSize="44sp"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_listview"/>
+</LinearLayout>

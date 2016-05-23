@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_entry_item"
+                android:clickable="true"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp">
+
+    <ImageView
+        android:id="@+id/iv_phonemgr_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/notification_information_progress_green"
+        android:src="@mipmap/setting_info_icon_version"/>
+
+    <TextView
+        android:id="@+id/tv_phonemgr_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@id/iv_phonemgr_icon"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@id/iv_phonemgr_icon"
+        android:singleLine="true"
+        android:text="蔡伟"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_phonemgr_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_phonemgr_icon"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@id/iv_phonemgr_icon"
+        android:singleLine="true"
+        android:text="在玩炉石传说"
+        android:textSize="15sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Kaijiyindao">
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_shouye"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/lead_marginBottom">
+
+        <ImageView
+            android:layout_width="@dimen/kuan"
+            android:id="@+id/icon1"
+            android:layout_height="@dimen/gao"
+            android:layout_margin="@dimen/shangbianju"
+            android:contentDescription="@string/tubiao_1"
+            android:src="@mipmap/adware_style_default"/>
+
+        <ImageView
+            android:layout_width="@dimen/kuan"
+            android:id="@+id/icon2"
+            android:layout_height="@dimen/gao"
+            android:layout_margin="@dimen/shangbianju"
+            android:contentDescription="@string/tubiao_2"
+            android:src="@mipmap/adware_style_default"/>
+
+        <ImageView
+            android:layout_width="@dimen/kuan"
+            android:id="@+id/icon3"
+            android:layout_height="@dimen/gao"
+            android:layout_margin="@dimen/shangbianju"
+            android:contentDescription="@string/tubiao_3"
+            android:src="@mipmap/adware_style_default"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_tiaoguo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/youbianju"
+        android:layout_marginTop="@dimen/judingbu"
+        android:text="@string/tiaoguo"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+</RelativeLayout>

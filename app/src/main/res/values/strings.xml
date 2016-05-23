@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">私人手机小管家</string>
+    <string name="tiaoguo">直接跳过</string>
+    <string name="tubiao_1">小图标 1</string>
+    <string name="tubiao_2">小图标 2</string>
+    <string name="tubiao_3">小图标 3</string>
+    <!--主页面-->
+    <style name="homeitem">
+        <item name="android:contentDescription">主页面TextView的风格</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/home_entry_item</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/home_item_textsize</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">hitHomeitem</item>
+    </style>
+    <!--home-->
+    <string name="app_name1">私人手机小管家</string>
+    <string name="guanyu">关于我们</string>
+    <string name="shezhi">设置</string>
+    <string name="jiasu">手机加速</string>
+    <string name="ruanjian">软件管理</string>
+    <string name="jiance">手机检测</string>
+    <string name="tongxun">通讯大全</string>
+    <string name="wenjian">文件管理</string>
+    <string name="laji">垃圾清理</string>
+    <string name="tel_title">一站式号码服务平台</string>
+    <string name="action_settings">设置</string>
+    <!-- Lead页面 -->
+    <string name="lead_skiptext">直接跳过</string>
+    <string name="leadimage_description">引导页面图像</string>
+    <string name="leadtext_description1">小图标1</string>
+    <string name="leadtext_description2">小图标2</string>
+    <string name="leadtext_description3">小图标3</string>
+    <!-- logo页面 -->
+    <string name="logoimage_description">logo图像</string>
+
+    <string name="home_clear">手机加速</string>
+    <!-- home -->
+    <string name="about">关于我们</string>
+    <string name="setting">设置</string>
+    <string name="rocket">手机加速</string>
+    <string name="softmgr">软件管理</string>
+    <string name="phonemgr">手机检测</string>
+    <string name="telmgr">通讯大全</string>
+    <string name="filemgr">文件管理</string>
+    <string name="sdclean">垃圾清理</string>
+    <!-- soft -->
+    <string name="space_all">所有空间</string>
+    <string name="space_phone">手机内置空间</string>
+    <string name="space_sdcard">外置存储空间</string>
+    <string name="allsoft">所有软件</string>
+    <string name="syssoft">系统软件</string>
+    <string name="usesoft">用户软件</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_set">SetActivity</string>
+    <!-- show app -->
+    <string name="showapp_delapp">卸载所选软件</string>
+    <string name="showfile_delfile">删除所选文件</string>
+    <!-- setting -->
+    <string name="setting_autostart">开机启动</string>
+    <string name="setting_pushmsg">消息推送</string>
+    <string name="setting_notifmsg">通知图标</string>
+    <string name="setting_clear">清理缓冲</string>
+    <string name="setting_update">版本更新</string>
+    <string name="setting_help">帮助说明</string>
+    <string name="setting_study">意见反溃</string>
+    <string name="setting_share">好友分享</string>
+    <string name="setting_about">关于我们</string>
+    <string name="title_activity_speedup">SpeedupActivity</string>
+    <!-- speedup -->
+    <string name="speedup_show_sysapp">显示系统进程</string>
+    <string name="speedup_show_userapp">只显示用户进程</string>
+    <!--  -->
+    <string name="filetype_all">全部</string>
+    <string name="filetype_txt">文档</string>
+    <string name="filetype_image">图像</string>
+    <string name="filetype_audio">音频</string>
+    <string name="filetype_video">视频</string>
+    <string name="filetype_zip">压缩包</string>
+    <string name="filetype_apk">程序包</string>
+    <string name="title_activity_showapp">ShowappActivity</string>
+    <string name="title_activity_phonemgr">PhonemgrActivity</string>
+    <string name="title_activity_telmgr">TelmgrActivity</string>
+    <string name="title_activity_telshow">TelshowActivity</string>
+    <string name="title_activity_filemgr">FilemgrActivity</string>
+    <string name="title_activity_filemgr_show">FilemgrShowActivity</string>
+    <string name="title_activity_kuaidi">KuaidiActivity</string>
+    <string name="title_activity_clear">ClearActivity</string>
+
+
+</resources>

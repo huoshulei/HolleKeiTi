@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/speedup_show_height"
+              android:background="@drawable/home_entry_item_normal"
+              android:gravity="center_vertical|center_horizontal"
+              android:orientation="vertical"
+              android:paddingBottom="10dp"
+              android:paddingLeft="20dp"
+              android:paddingRight="20dp"
+              android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_phoneName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="手机型号"
+            android:textSize="@dimen/speedup_phonemodle_textsize"/>
+
+        <TextView
+            android:id="@+id/tv_phoneModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="据说是iphone186s puls土豪金版本"
+            android:textSize="@dimen/speedup_phonemodle_textsize"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/pb_ram"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="70"
+            android:progressDrawable="@drawable/progressbar_men"/>
+
+        <TextView
+            android:id="@+id/tv_ramMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="可用内存:987M/192G"
+            android:textColor="#ff33ccff"
+            android:textSize="@dimen/speedup_phonerammsg_textsize"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_oneKeyClear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/speedup_clearbtn_height"
+        android:layout_weight="1"
+        android:background="@drawable/btn_float"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:text=" 一  键  清  理 "
+        android:textColor="@color/white"/>
+
+</LinearLayout>

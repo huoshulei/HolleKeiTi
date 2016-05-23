@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/home_entry_item_normal"
+              android:orientation="vertical">
+    <!--手机空间显示布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <!--饼形图-->
+        <edu.hsl.hollekeiti.phone.view.PiechartView
+            android:id="@+id/piechart"
+            android:layout_width="@dimen/softmgr_piechar_width"
+            android:layout_height="@dimen/softmgr_piechar_height"
+            android:layout_gravity="center_vertical"/>
+        <!--饼形图颜色标记-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/piechart"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <View
+                    style="@style/soft_piechar_icon"
+                    android:layout_gravity="center"
+                    android:background="@color/piechar_phone"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/space_phone"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:visibility="invisible"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    style="@style/soft_piechar_icon"
+                    android:layout_gravity="center"
+                    android:background="@color/piechar_sdcard"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/space_sdcard"
+                    android:textSize="20sp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <!--手机空间进度-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_listitem_horizontal_margin"
+        android:layout_marginRight="@dimen/app_listitem_horizontal_margin"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/app_listitem_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/space_phone"
+            android:textSize="20sp"/>
+
+        <ProgressBar
+            android:id="@+id/pb_phone_space"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:max="100"
+            android:progress="60"
+            android:progressDrawable="@drawable/progressbar_phone_space"/>
+        <TextView
+            android:id="@+id/tv_phone_space_msg"
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:layout_height="match_parent"
+            android:text="100MB/1000MB"/>
+
+    </LinearLayout>
+    <!--SD卡-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/app_listitem_horizontal_margin"
+        android:layout_marginLeft="@dimen/app_listitem_horizontal_margin"
+        android:layout_marginRight="@dimen/app_listitem_horizontal_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/space_sdcard"
+            android:textSize="20sp"/>
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/pb_sdcard_space"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:progressDrawable="@drawable/progressbar_sdcard_space"
+            android:max="100"
+            android:progress="0"/>
+        <TextView
+            android:id="@+id/tv_sdcard_space_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="100MB/1000MB"/>
+    </LinearLayout>
+</LinearLayout>

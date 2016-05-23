@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <!--开机启动-->
+    <RelativeLayout
+        android:id="@+id/rl_setting_autostart"
+        style="@style/setting_item">
+
+        <TextView
+            style="@style/setting_item_head"
+            android:text="@string/setting_autostart"/>
+
+        <ToggleButton
+            android:id="@+id/tb_toggle_reboot"
+            style="@style/setting_item_head_icon_toggle"/>
+
+    </RelativeLayout>
+    <!--通知图标-->
+    <RelativeLayout
+        android:id="@+id/rl_setting_notifmsg"
+        style="@style/setting_item">
+
+        <TextView
+            style="@style/setting_item_head"
+            android:text="@string/setting_notifmsg"/>
+
+        <ToggleButton
+            android:id="@+id/tb_toggle_notification"
+            style="@style/setting_item_head_icon_toggle"/>
+
+    </RelativeLayout>
+    <!--消息推送-->
+    <RelativeLayout
+        android:id="@+id/rl_setting_pushmsg"
+        style="@style/setting_item">
+
+        <TextView
+            style="@style/setting_item_head"
+            android:text="@string/setting_pushmsg"/>
+
+        <ToggleButton
+            android:id="@+id/tb_toggle_push"
+            style="@style/setting_item_head_icon_toggle"/>
+    </RelativeLayout>
+    <!--帮助说明-->
+    <RelativeLayout
+        android:id="@+id/rl_setting_help"
+        style="@style/setting_item">
+
+        <TextView
+            style="@style/setting_item_head"
+            android:text="@string/setting_help"/>
+
+        <ImageView
+            style="@style/setting_item_head_icon"/>
+    </RelativeLayout>
+    <!--意见反馈-->
+    <RelativeLayout
+        android:id="@+id/rl_setting_study"
+        style="@style/setting_item">
+
+        <TextView
+            style="@style/setting_item_head"
+            android:text="@string/setting_study"/>
+
+        <ImageView
+            style="@style/setting_item_head_icon"/>
+
+    </RelativeLayout>
+    <!--好友分享-->
+    <RelativeLayout
+        android:id="@+id/rl_setting_share"
+        style="@style/setting_item">
+
+        <TextView
+            style="@style/setting_item_head"
+            android:text="@string/setting_share"/>
+
+        <ImageView
+            style="@style/setting_item_head_icon"/>
+
+    </RelativeLayout>
+    <!--版本更新-->
+    <RelativeLayout
+        android:id="@+id/rl_setting_uptada"
+        style="@style/setting_item">
+
+        <TextView
+            style="@style/setting_item_head"
+            android:text="@string/setting_update"/>
+
+        <ImageView
+            style="@style/setting_item_head_icon"/>
+    </RelativeLayout>
+    <!--关于我们-->
+    <RelativeLayout
+        android:id="@+id/rl_setting_about"
+        style="@style/setting_item">
+
+        <TextView
+            style="@style/setting_item_head"
+            android:text="@string/setting_about"/>
+
+        <ImageView style="@style/setting_item_head_icon"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.hsl.hollekeiti.activity.FilemgrShowActivity">
+
+    <edu.hsl.hollekeiti.phone.view.ActionBarView
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0"
+        android:background="@drawable/home_entry_item"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文件数量"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_file_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00000"
+            android:textColor="@color/file_number_color"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="占用空间"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_file_all_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="999GB"
+            android:textColor="@color/file_size_color"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_file_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_entry_item"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp">
+
+        <CheckBox
+            android:id="@+id/cb_delall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"/>
+
+        <Button
+            android:id="@+id/btn_delall"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="0"
+            android:background="@drawable/btn_float"
+            android:text="@string/showfile_delfile"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+</LinearLayout>

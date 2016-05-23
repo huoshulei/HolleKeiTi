@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.hsl.hollekeiti.activity.ClearActivity">
+
+    <edu.hsl.hollekeiti.phone.view.ActionBarView
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:background="@drawable/home_entry_item">
+
+        <TextView
+            android:id="@+id/tv_file_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="999G"
+            android:textColor="#ffffff"
+            android:textSize="44sp"
+            android:textStyle="bold|italic"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_file_size"
+            android:layout_alignBottom="@id/tv_file_size"
+            android:layout_toLeftOf="@id/tv_file_size"
+            android:text="已发现"
+            android:textColor="#ffff00"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ProgressBar
+            android:id="@+id/pb_clear"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/progressbar_rotate"
+            android:indeterminateDuration="600"
+            android:indeterminateOnly="true"
+            android:visibility="visible"/>
+
+        <ListView
+            android:id="@+id/lv_rubbish"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:visibility="invisible"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@drawable/home_entry_item"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp">
+
+        <CheckBox
+            android:id="@+id/cb_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/check_rect_correct"/>
+
+        <Button
+            android:id="@+id/btn_clear_rubbish"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/speedup_showapp_height"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/btn_float"
+            android:text=" 一  键  清  理 "
+            android:textColor="@color/white"
+            android:textSize="22sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

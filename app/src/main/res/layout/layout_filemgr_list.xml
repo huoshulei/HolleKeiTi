@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <View style="@style/line_h_transparent"/>
+
+    <RelativeLayout
+        android:id="@+id/file_classlist_all"
+        style="@style/app_listitem">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/app_listitem_text"
+                android:text="@string/filetype_all"/>
+
+            <TextView
+                android:id="@+id/file_all_size"
+                style="@style/app_listitem_text_small"
+                android:text="计算中..."/>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/file_all_loading"
+            style="@style/app_listitem_righticon_loading"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/file_all_righticon"
+            style="@style/app_listitem_righticon"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <View style="@style/line_h_transparent"/>
+
+    <RelativeLayout
+        android:id="@+id/file_classlist_txt"
+        style="@style/app_listitem">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/app_listitem_text"
+                android:text="@string/filetype_txt"/>
+
+            <TextView
+                android:id="@+id/file_txt_size"
+                style="@style/app_listitem_text_small"
+                android:text="计算中..."/>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/file_txt_loading"
+            style="@style/app_listitem_righticon_loading"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/file_txt_righticon"
+            style="@style/app_listitem_righticon"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <View style="@style/line_h_transparent"/>
+
+    <RelativeLayout
+        android:id="@+id/file_classlist_video"
+        style="@style/app_listitem">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/app_listitem_text"
+                android:text="@string/filetype_video"/>
+
+            <TextView
+                android:id="@+id/file_video_size"
+                style="@style/app_listitem_text_small"
+                android:text="计算中..."/>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/file_video_loading"
+            style="@style/app_listitem_righticon_loading"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/file_video_righticon"
+            style="@style/app_listitem_righticon"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <View style="@style/line_h_transparent"/>
+
+    <RelativeLayout
+        android:id="@+id/file_classlist_audio"
+        style="@style/app_listitem">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/app_listitem_text"
+                android:text="@string/filetype_audio"/>
+
+            <TextView
+                android:id="@+id/file_audio_size"
+                style="@style/app_listitem_text_small"
+                android:text="计算中..."/>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/file_audio_loading"
+            style="@style/app_listitem_righticon_loading"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/file_audio_righticon"
+            style="@style/app_listitem_righticon"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <View style="@style/line_h_transparent"/>
+
+    <RelativeLayout
+        android:id="@+id/file_classlist_image"
+        style="@style/app_listitem">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/app_listitem_text"
+                android:text="@string/filetype_image"/>
+
+            <TextView
+                android:id="@+id/file_image_size"
+                style="@style/app_listitem_text_small"
+                android:text="计算中..."/>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/file_image_loading"
+            style="@style/app_listitem_righticon_loading"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/file_image_righticon"
+            style="@style/app_listitem_righticon"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <View style="@style/line_h_transparent"/>
+
+    <RelativeLayout
+        android:id="@+id/file_classlist_zip"
+        style="@style/app_listitem">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/app_listitem_text"
+                android:text="@string/filetype_zip"/>
+
+            <TextView
+                android:id="@+id/file_zip_size"
+                style="@style/app_listitem_text_small"
+                android:text="计算中..."/>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/file_zip_loading"
+            style="@style/app_listitem_righticon_loading"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/file_zip_righticon"
+            style="@style/app_listitem_righticon"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <View style="@style/line_h_transparent"/>
+
+    <RelativeLayout
+        android:id="@+id/file_classlist_apk"
+        style="@style/app_listitem">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/app_listitem_text"
+                android:text="@string/filetype_apk"/>
+
+            <TextView
+                android:id="@+id/file_apk_size"
+                style="@style/app_listitem_text_small"
+                android:text="计算中..."/>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/file_apk_loading"
+            style="@style/app_listitem_righticon_loading"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/file_apk_righticon"
+            style="@style/app_listitem_righticon"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.hsl.hollekeiti.activity.FilemgrActivity">
+
+    <edu.hsl.hollekeiti.phone.view.ActionBarView
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View style="@style/line_h_transparent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/home_entry_item">
+
+        <TextView
+            android:id="@+id/tv_file_any_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="196.59G"
+            android:textColor="#ffffff"
+            android:textSize="44sp"
+            android:textStyle="bold|italic"/>
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_file_any_size"
+            android:layout_alignBottom="@id/tv_file_any_size"
+            android:layout_toRightOf="@id/tv_file_any_size"
+            android:text="已发现"
+            android:textColor="#111111"
+            android:textSize="22sp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_filemgr_list"/>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.hsl.hollekeiti.activity.JiasuActivity">
+
+    <edu.hsl.hollekeiti.phone.view.ActionBarView
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"/>
+
+    <include
+        layout="@layout/layout_speedup_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <include layout="@layout/layout_listview"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@drawable/home_entry_item_normal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <CheckBox
+            android:id="@+id/cb_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/check_rect_correct"/>
+
+        <Button
+            android:id="@+id/btn_showapp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/speedup_showapp_height"
+            android:background="@drawable/btn_float"
+            android:text="@string/speedup_show_sysapp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"/>
+    </LinearLayout>
+
+</LinearLayout>
